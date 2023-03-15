@@ -19,4 +19,5 @@ stage:
 	git add .
 
 push:
-	git commit -m "message"
+	@git commit -m "message"
+	@git push
