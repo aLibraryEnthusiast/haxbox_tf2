@@ -76,6 +76,10 @@ reimplementation of [cazzwastaken's](https://github.com/cazzwastaken/) memory.h 
  - provides read/write functionality to memory
  - gets PID from name
 
+## updater.cpp (finished)
+scans for updates and, if they're avalable, prompts you to download them
+
+
 # what needs to be done
 
 ## important (will be done first)

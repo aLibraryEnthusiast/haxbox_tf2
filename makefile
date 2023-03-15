@@ -3,16 +3,17 @@ default: build file binwalk run
 gitPush: build stage pull push
 
 build:
-	g++ ./src/main.cpp -o ./haxbox -std=c++20 -Wno-return-local-addr
+	@-mkdir ./bin
+	g++ ./src/main.cpp -o ./bin/haxbox -std=c++20 -Wno-return-local-addr -lcurl -lSDL2
 
 file:
-	@file haxbox
+	@file ./bin/haxbox
 
 binwalk:
-	@binwalk haxbox > binwalk.txt
+	@binwalk ./bin/haxbox > binwalk.txt
 
 run:
-	./haxbox
+	./bin/haxbox
 
 
 stage:
