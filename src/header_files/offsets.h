@@ -1,0 +1,32 @@
+namespace TF_offsets { 
+        constexpr ::std::ptrdiff_t localPlayer = 0xC3B580;
+        constexpr ::std::ptrdiff_t entityList = 0xC4B0AC;
+        constexpr ::std::ptrdiff_t duck = 0xC6A35C;
+        constexpr ::std::ptrdiff_t right = 0xC692D4;
+        constexpr ::std::ptrdiff_t left = 0xC692C8;
+        constexpr ::std::ptrdiff_t moveRight = 0xC69328;
+        constexpr ::std::ptrdiff_t moveLeft = 0xC6931C;
+        constexpr ::std::ptrdiff_t moveBackward = 0xC6B2C0;
+        constexpr ::std::ptrdiff_t moveFoward = 0xC6B2CC;
+        constexpr ::std::ptrdiff_t jump = 0xC6A320;
+        constexpr ::std::ptrdiff_t attack = 0xC6A32C;
+        constexpr ::std::ptrdiff_t attack2 = 0xC6A338;
+        constexpr ::std::ptrdiff_t getMaxClients = 0x464BC4;
+        constexpr ::std::ptrdiff_t isInGame = 0x464A40;
+        constexpr ::std::ptrdiff_t isConnected = 0x59A7C9;
+        constexpr ::std::ptrdiff_t glowObjectManager = 0xBD5BD4;
+        constexpr ::std::ptrdiff_t viewAngles = 0x469494;
+        constexpr ::std::ptrdiff_t iHealth = 0xA8;
+        constexpr ::std::ptrdiff_t lifeState = 0xA5;
+        constexpr ::std::ptrdiff_t flDeathTime = 0x10C0;
+        constexpr ::std::ptrdiff_t iTeamNum = 0xB0;
+        constexpr ::std::ptrdiff_t hActiveWeapon = 0xDB8;
+        constexpr ::std::ptrdiff_t bDormant =  0x1AA; 
+        constexpr ::std::ptrdiff_t vecOrigin = 0x364;
+        constexpr ::std::ptrdiff_t maxHealth = 0xF50;
+        constexpr ::std::ptrdiff_t flag = 0x37C;
+        constexpr ::std::ptrdiff_t playerClass = 0xC20-1;
+        constexpr ::std::ptrdiff_t viewMatrix = 0x59e7c8;
+        constexpr ::std::ptrdiff_t boneMatrix = 0x5B0;
+        constexpr ::std::ptrdiff_t vecViewOffset = 0xFC; //havent tested on a feature but seems correct on reclass
+        }

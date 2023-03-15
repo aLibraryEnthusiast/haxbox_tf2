@@ -7,7 +7,7 @@
  - normal hacks (esp, tracers, aimbot, hide overlay, etc)
  - update notices
  - fast & reliable
- - haxbox exclusive hacks (TBD)
+ - haxbox exclusive hacks (Smooth Aimbot)
 
 ## how it works:
 To be Written
@@ -26,6 +26,16 @@ version_info.h is where i store multiple things, here's a runthrough of whats st
  - wlook_updated -> 0 if tf2 hasn't been updated, 1 if it has been updated
  - wlook_true/wlook_false -> just assisters for what's above
  - haxbox_version -> where to get "haxbox_version.txt"
+
+## what is offsets.h?
+offsets.h is a collection of all TF2 offsets, here's a runthrough on how to use them:
+```c++
+//rest of your code above...
+#using ./header_files/offsets.h
+//more code here...
+std::cout << TF_offsets::iHealth << "\n"; //this prints out the offset for the health (read only)
+//you get the idea
+```
 
 ## why does almost have an asterisk
 the reason almost has an asterist (*) is because it still can be detected, either by VAC or by any third party anti-exploit, however as it's external and not internal, it'll be more complex to detect
@@ -49,3 +59,37 @@ yes you can, just remember to update version_info or it'll break
 ## make gitPush:
  - what it does: pulls/pushes to git
  - do you need it: no, it's just something i use
+
+
+# list of all classes
+
+## main.cpp (not finished)
+entrypoint of this program
+### what it does
+ - gets its own PID and the PID of tf2
+ - acts as a "bridge" between the program and tf2
+ - _all_ commands go through main.cpp
+
+## memory_manager.cpp (not finished)
+reimplementation of [cazzwastaken's](https://github.com/cazzwastaken/) memory.h file
+### what it does
+ - provides read/write functionality to memory
+ - gets PID from name
+
+# what needs to be done
+
+## important (will be done first)
+
+### normal hacks
+ - ESP (not done yet)
+ - tracers (not done yet)
+ - aimbot (not done yet)
+ - hide overlay (not done yet)
+
+### finish injector
+#### what i need to do for that
+ - learn name of tf2's executor on linux
+ - profit
+
+#### how im going to do that
+idk
