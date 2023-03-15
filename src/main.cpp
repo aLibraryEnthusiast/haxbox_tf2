@@ -1,10 +1,9 @@
 //tf2 cheat engine for tux/linux
 
 #include <iostream>
-#include "./header_files/offsets.h"
 #include "./header_files/version_info.h"
 #include "./header_files/Vector3.h" 
-#include "./header_files/fuck_you_gpp.h"
+#include "./header_files/fuck_you_VAC.h" //changes the sha256sum of the program ;)
 
 using namespace std;
 
