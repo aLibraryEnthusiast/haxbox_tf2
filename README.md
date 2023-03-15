@@ -26,3 +26,26 @@ version_info.h is where i store multiple things, here's a runthrough of whats st
  - wlook_updated -> 0 if tf2 hasn't been updated, 1 if it has been updated
  - wlook_true/wlook_false -> just assisters for what's above
  - haxbox_version -> where to get "haxbox_version.txt"
+
+## why does almost have an asterisk
+the reason almost has an asterist (*) is because it still can be detected, either by VAC or by any third party anti-exploit, however as it's external and not internal, it'll be more complex to detect
+
+## issues and problems
+if you, for any reason, have an issue with haxbox, for example (x) cheat isn't working or (y) crashed the game, please let me know, if i can reproduce it i'll get on and fixing it, however if it's a one-time thing, then i wont be able to reproduce it, as well as that, if you have mods installed (sound mods, etc) that may be the cause, look into your tft mods folder before filing an issue
+
+## i want to make a fork of this, can i?
+yes you can, just remember to update version_info or it'll break
+
+##### NOTICE (again): i, or any 3rd party, do not condone hacking, whilst yes i made this, it doesn't mean you should use it, i took a huge risk when making this so be careful
+
+# Make commands
+
+#### to run these, you'll need either make or something similar
+
+## make:
+ - what it does: runs the default tree, which is building it, telling you what it does, binwalking and then executing
+ - do you need it: yes and no, you *could* build it yourself but i dont recomend it
+
+## make gitPush:
+ - what it does: pushes to git
+ - do you need it: no, it's just something i use
