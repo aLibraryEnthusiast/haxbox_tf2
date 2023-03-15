@@ -47,5 +47,5 @@ yes you can, just remember to update version_info or it'll break
  - do you need it: yes and no, you *could* build it yourself but i dont recomend it
 
 ## make gitPush:
- - what it does: pushes to git
+ - what it does: pulls/pushes to git
  - do you need it: no, it's just something i use
