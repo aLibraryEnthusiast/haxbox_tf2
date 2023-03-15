@@ -68,7 +68,7 @@ jobs:
 
     - run: |
          echo "Run, Build Application using script"
-         sudo apt-get install libcurl4-openssl-dev
+         sudo apt-get install libcurl4-openssl-dev libsdl2-dev
          make
 
     - name: Perform CodeQL Analysis
