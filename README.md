@@ -1,6 +1,6 @@
 # HAXBOX - a linux based external tf2 hack almost* undetectable
 
-##### NOTICE: i, or any 3rd party, do not condone hacking, whilst yes i made this, it doesn't mean you should use it, i took a huge risk when making this so be careful
+##### NOTICE: i, or any 3rd party, do not condone hacking/exploiting, whilst yes i made this, it doesn't mean you should use it, i took a huge risk when making this so be careful
 
 ## features:
  - almost* undetectable
@@ -46,7 +46,7 @@ if you, for any reason, have an issue with haxbox, for example (x) cheat isn't w
 ## i want to make a fork of this, can i?
 yes you can, just remember to update version_info or it'll break
 
-##### NOTICE (again): i, or any 3rd party, do not condone hacking, whilst yes i made this, it doesn't mean you should use it, i took a huge risk when making this so be careful
+##### NOTICE (again): i, or any 3rd party, do not condone hacking/exploiting, whilst yes i made this, it doesn't mean you should use it, i took a huge risk when making this so be careful
 
 # Make commands
 
@@ -93,11 +93,6 @@ scans for updates and, if they're avalable, prompts you to download them
  - aimbot (not done yet)
  - hide overlay (not done yet)
 
-### finish injector
-#### what i need to do for that
- - learn name of tf2's executor on linux
- - profit
-
 #### how im going to do that
 idk
 
@@ -125,3 +120,11 @@ idk
 
 ## exit code 5:
  - tf2 closed down, re-launch tf2
+
+## exit code 6:
+ - failed to seek to specified point OR read memory, run as root/sudo/su
+
+## seg fault (core dumped):
+ - something broke, normaly happens with non-default haxbox, if it's an actual haxbox error, consider [creating an issue](https://github.com/aLibraryEnthusiast/haxbox_tf2/issues)
+
+##### NOTICE (final time): i, or any 3rd party, do not condone hacking/exploiting, whilst yes i made this, it doesn't mean you should use it, i took a huge risk when making this so be careful
