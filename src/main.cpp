@@ -10,7 +10,7 @@
 #include "updater.cpp"
 #include <SDL2/SDL_messagebox.h>
 
-#define debug true
+#define debug false
 
 using namespace std;
 
@@ -51,5 +51,6 @@ int main(int argc, char* argv[]){
 	}
 	cin.get();
 	//cout << "offset \"left\" is at: " << TF_offsets::left << "b into the binary" << "\n";
+	//cout << "\"IHealth\" is " << TF_offsets::iHealth << " bytes into the binary\n";
     return 0;
 }

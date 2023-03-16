@@ -78,6 +78,9 @@ reimplementation of [cazzwastaken's](https://github.com/cazzwastaken/) memory.h 
 
 ## updater.cpp (finished)
 scans for updates and, if they're avalable, prompts you to download them
+### what it does
+ - reads from version_info.h for if tf2 has been updated, this programs version and if it got updated
+ - alerts user if their version is out of date and asks them to download the latest version
 
 
 # what needs to be done
