@@ -2,6 +2,19 @@
 
 ##### NOTICE: i, or any 3rd party, do not condone hacking/exploiting, whilst yes i made this, it doesn't mean you should use it, i took a huge risk when making this so be careful
 
+## Code Policy Notice:
+_if_ you modify/make a branch of this project, you need to follow these rules:
+
+1. it _must_ stay open source
+2. you cannot sell this software, only accept tips
+3. you cannot add a key system, just use Ko-Fi
+4. you cannot add malware to any part of the code
+5. you cannot obfuscate the code
+
+## how to compile:
+read [how to compile](https://github.com/aLibraryEnthusiast/haxbox_tf2/blob/master/COMPILING.md) on how to compile this
+if you just want to download + run it, go [here](https://github.com/aLibraryEnthusiast/haxbox_tf2/releases/latest)
+
 ## features:
  - almost* undetectable
  - normal hacks (esp, tracers, aimbot, hide overlay, etc)
