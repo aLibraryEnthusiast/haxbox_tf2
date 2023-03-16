@@ -100,3 +100,28 @@ scans for updates and, if they're avalable, prompts you to download them
 
 #### how im going to do that
 idk
+
+
+
+# exit codes and what they mean
+
+## exit code 255 (-1):
+ - injection error, occores when haxbox fails to inject into TF2
+
+## exit code 0:
+ - script exitied without any error
+
+## exit code 1:
+ - out of date error, update your version
+
+## exit code 2:
+ - tf2 not launched, launch tf2 before running
+
+## exit code 3:
+ - same as 255 (-1), but normaly means the ELF file is corrupt, reinstall it
+
+## exit code 4:
+ - VAC'd, yes thats right you got vac banned, hope you were using an alt
+
+## exit code 5:
+ - tf2 closed down, re-launch tf2
