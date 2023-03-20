@@ -20,19 +20,23 @@ auto getPID(string program_name){
     return pid;
 }
 
-int readMemory(ptrdiff_t offset, pid_t pid){
+int readMemory(ptrdiff_t offset, pid_t pid, int size_of_buffer){
     std::ifstream mem("/proc/" + to_string(pid) + "/mem", ios::in | ios::binary);
     if(!mem.is_open()){
         cerr << "failed to open memory of TF2, try running as sudo\n";
         return -1;
     }
-
-    if(mem.seekg(to_string(offset) == "-1")){
+    if((mem.seekg(offset).fail())){
         cerr << "failed to seek to specified point\n";
+        //cerr << "attempted to seek to: " << offset << "\n";
+        //auto result = (offset == -1);
+        //auto result2 = mem.seekg(offset == -1)
+        //cerr << "got result: " << result << "\n";
         return 6;
     }
-    char buffer[4];
-    //read 4 bytes at specified memory address
+    
+    char buffer[size_of_buffer];
+    //read specified bytes at specified memory address
     if(!mem.read(buffer, sizeof(buffer))){
         cerr << "failed to read memory\n";
         return 6;
@@ -44,18 +48,32 @@ int readMemory(ptrdiff_t offset, pid_t pid){
     return 0;
 }
 
-bool writeMemory(int offset, pid_t pid){ //todo: write this propper
+int writeMemory(int offset, pid_t pid){ //todo: write this propper
+    std::ifstream mem("/proc/" + to_string(pid) + "/mem", ios::in | ios::binary);
+    if(!mem.is_open()){
+        cerr << "failed to open memory of TF2, try running as sudo\n";
+        return -1;
+    }
+    if((mem.seekg(offset).fail())){
+        cerr << "failed to seek to specified point\n";
+        //cerr << "attempted to seek to: " << offset << "\n";
+        //auto result = (offset == -1);
+        //auto result2 = mem.seekg(offset == -1)
+        //cerr << "got result: " << result << "\n";
+        return 6;
+    }
     
-    if(true == true){
-        //if it worked
-        return true;
+    char buffer[4];
+    //write 4 bytes at specified memory address
+    if(!mem.read(buffer, sizeof(buffer))){
+        cerr << "failed to read memory\n";
+        return 6;
     }
-    else{
-        //if it failed
-        return false;
-    }
-    //if you somehow escaped the thing
-    return NULL;
+    int data = *reinterpret_cast<int*>(buffer);
+    cout << "Data at memory location: " << data <<"\n";
+
+    mem.close(); //close pipe to memory
+    return 0;
 }
 
 auto connectToProgram(string program_name){

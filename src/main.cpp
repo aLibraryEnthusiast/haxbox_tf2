@@ -12,6 +12,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
 #define debug true
 
 using namespace std;
@@ -37,7 +38,7 @@ int main(int argc, char* argv[]){
 		SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_WARNING, "Haxbox Warning | tf2 updated", "Haxbox has detected that tf2 has been updated\nthis may cause your current version of Haxbox to be detected\nplease stand by as we shuffle around some code and change the Shasum\n", NULL);
 		exit(1);
 	}
-	auto target_program_pid = connectToProgram(/*"hl2_linux"*/argv[0]); //TODO: get actual tf2 filename
+	auto target_program_pid = connectToProgram(/*"hl2_linux"*/"code"); //TODO: get actual tf2 filename
     auto current_program_pid = connectToProgram(argv[0]); //TODO: get actual tf2 filename
 	cout << "current program PID: " << current_program_pid << "\n";
 	cout << "target program PID: " << target_program_pid << "\n";
@@ -56,7 +57,8 @@ int main(int argc, char* argv[]){
 	}
 	else{
 	}
-	int o = readMemory(0x1000, target_program_pid);
+	cin.get();
+	int o = readMemory(0x0, target_program_pid, 8);
 	switch(o){
 		case -1: //failed to inject
 			exit(-1);

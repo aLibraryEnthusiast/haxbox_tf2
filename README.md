@@ -34,11 +34,11 @@ Vector3.h is made by the all holy [cazzwastaken](https://github.com/cazzwastaken
 ## what is version_info.h?
 version_info.h is where i store multiple things, here's a runthrough of whats stored in there:
 
- - name -> name of the program
- - version -> version of the program, compared to "tf2_updated.txt"
- - wlook_updated -> 0 if tf2 hasn't been updated, 1 if it has been updated
- - wlook_true/wlook_false -> just assisters for what's above
- - haxbox_version -> where to get "haxbox_version.txt"
+ - haxbox_identifier -> name of the program
+ - haxbox_version_identifier -> version of the program
+ - tf2_update_identifier -> 0 if tf2 hasn't been updated, 1 if it has been updated
+ - tf2_update_true/tf2_update_false -> just assisters for what's above
+ - haxbox_update_identifier -> where to get "haxbox_version.txt"
 
 ## what is offsets.h?
 offsets.h is a collection of all TF2 offsets, here's a runthrough on how to use them:
